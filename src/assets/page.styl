@@ -1,0 +1,49 @@
+#page
+    background linear-gradient(0deg, rgba(5,25,55,1) 0%, rgba(0,77,122,1) 25%, rgba(0,135,147,1) 50%, rgba(0,191,114,1) 75%, rgba(168,235,18,1) 100%);
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+[class*="content-"]
+    display flex
+    justify-content center
+    height auto
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+
+.content-download
+    display initial
+
+.download-file 
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    height auto
+    width 120%
+    padding 20px
+    border-radius 5px
+    cursor pointer
+    margin-top 10px
+
+img 
+    width 50%
+    border-radius 50px
+
+.disable
+    // background-color grey
+    opacity 0.4
+
+.content-information p
+    text-align justify
+    margin-right 10%
+    margin-left 10%
+    cursor pointer
+    padding 10px
+    border-radius 5px
+    color #f1f1f1
+
+.content-information p.center
+    text-align center
